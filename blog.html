@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpingHands</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-md bg-light fs-5 position-fixed">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="navbar-items ms-4 charityName">
+            Helping<span class="text-danger">Hands</span>
+          </li>
+        </ul>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav">
+            <li class="navbar-items me-4 navbarTabs">
+              <a class="text-decoration-none" href="./Home.html">Home</a>
+            </li>
+            <li class="navbar-items me-4 navbarTabs">
+              <a class="text-decoration-none" href="./cases.html">Causes</a>
+            </li>
+            <li class="navbar-items me-4 navbarTabs">
+              <a class="text-decoration-none" href="./about.html">About</a>
+            </li>
+            <li class="navbar-items me-4 navbarTabs">
+              <a class="text-decoration-none active" href="./blog.html">Blog</a>
+            </li>
+            <li class="navbar-items me-5 navbarTabs">
+              <a class="text-decoration-none" href="./contact.html">Contact</a>
+            </li>
+            <li class="navbar-links me-4 navbarTabs">
+              <a
+                class="text-decoration-none text-light rounded-pill btn donateBtn"
+                href=""
+                >Donate Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header image and text -->
+    <div class="container-fluid mt-5 mb-5">
+      <div class="d-flex text-center mt-5 headerImageblog" style="height: 40vh">
+        <h2
+          class="h1 text-white"
+          style="
+            font-size: 100px;
+            filter: drop-shadow(2px 4px 6px black);
+            margin-left: 110px;
+          "
+        >
+          Blog
+        </h2>
+      </div>
+    </div>
+
+    <!-- blogs Section -->
+
+    <div class="container blogsContainer">
+      <div class="row gap-5">
+        <!-- 
+        blogs with image and text -->
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-lg-12 mb-5">
+              <div class="card cardHover" style="width: 100%">
+                <img
+                  src="./images/blog1.jpg"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+                <div class="ms-4" style="margin-top: -55px">
+                  <a
+                    href=""
+                    class="btn btn-danger cardbtns"
+                    style="width: 87px"
+                  >
+                    <h2>15</h2>
+                    <h3>Jan</h3>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title">Child Labouring</h1>
+                  <p>
+                    Child labor refers to the employment of children in any form
+                    of work that deprives them of their childhood, interferes
+                    with their ability to attend regular school, and is harmful
+                    to their physical, mental, social, or moral development. It
+                    is a widespread and persistent problem, particularly in
+                    developing countries, where poverty, lack of education, and
+                    inadequate legal protections contribute to the exploitation
+                    of children in various industries.
+                  </p>
+                  <a href="" class="btn btn-danger cardbtns">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mt-3 mb-5">
+              <div class="card cardHover" style="width: 100%">
+                <img
+                  src="./images/blog2.jpg"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+                <div class="ms-4" style="margin-top: -55px">
+                  <a
+                    href=""
+                    class="btn btn-danger cardbtns"
+                    style="width: 87px"
+                  >
+                    <h2>05</h2>
+                    <h3>Aug</h3>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title">Children in Gaza</h1>
+                  <p>
+                    Children in Gaza face a myriad of challenges due to the
+                    ongoing conflict, political instability, and humanitarian
+                    crisis in the region. Gaza, a small territory located on the
+                    eastern coast of the Mediterranean Sea, has been the site of
+                    numerous conflicts between Israel and Palestinian militant
+                    groups, resulting in widespread violence, destruction, and
+                    loss of life. As a result, children in Gaza are exposed to
+                    trauma, displacement, and deprivation from a very young age,
+                    with profound and long-lasting effects on their physical,
+                    emotional, and psychological well-being.
+                  </p>
+                  <a href="" class="btn btn-danger cardbtns">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mt-3 mb-5">
+              <div class="card cardHover" style="width: 100%">
+                <img
+                  src="./images/ecosystem1.jpg"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+                <div class="ms-4" style="margin-top: -55px">
+                  <a
+                    href=""
+                    class="btn btn-danger cardbtns"
+                    style="width: 87px"
+                  >
+                    <h2>12</h2>
+                    <h3>Sep</h3>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title">Our Ecosystem</h1>
+                  <p>
+                    Ecosystems are intricate webs of life, where various
+                    organisms, from microscopic bacteria to towering trees,
+                    interact with each other and their physical environment.
+                    These interactions form a delicate balance that sustains
+                    life on Earth. However, human activities have significantly
+                    impacted ecosystems worldwide, often disrupting this balance
+                    and causing widespread environmental degradation.
+                  </p>
+                  <a href="" class="btn btn-danger cardbtns">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mt-3 mb-5">
+              <div class="card cardHover" style="width: 100%">
+                <img
+                  src="./images/senior citizons.jpg"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+                <div class="ms-4" style="margin-top: -55px">
+                  <a
+                    href=""
+                    class="btn btn-danger cardbtns"
+                    style="width: 87px"
+                  >
+                    <h2>19</h2>
+                    <h3>Mar</h3>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title">Senior Citizons</h1>
+                  <p>
+                    One of the key aspects of senior citizens' lives is
+                    retirement. After years of working and contributing to the
+                    workforce, many seniors enter retirement, a phase of life
+                    characterized by newfound freedom and leisure time.
+                    Retirement offers seniors the opportunity to pursue hobbies,
+                    travel, spend time with family and friends, and engage in
+                    activities that bring them joy and fulfillment. However,
+                    retirement also comes with financial considerations, as
+                    seniors must navigate pension plans, retirement savings, and
+                    healthcare expenses to ensure financial security in their
+                    later years.
+                  </p>
+                  <a href="" class="btn btn-danger cardbtns">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mt-3 mb-5">
+              <div class="card cardHover" style="width: 100%">
+                <img
+                  src="./images/malnutririon.jpeg"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+                <div class="ms-4" style="margin-top: -55px">
+                  <a
+                    href=""
+                    class="btn btn-danger cardbtns"
+                    style="width: 87px"
+                  >
+                    <h2>19</h2>
+                    <h3>Mar</h3>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title">Mal nutrition</h1>
+                  <p>
+                    Malnutrition is a widespread and multifaceted issue that
+                    affects millions of people around the world, encompassing
+                    both undernutrition and overnutrition. It occurs when
+                    individuals do not receive adequate nutrition to meet their
+                    body's needs, leading to deficiencies in essential nutrients
+                    or an imbalance of nutrients that can have serious health
+                    consequences.
+                  </p>
+                  <a href="" class="btn btn-danger cardbtns">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- categories, recent posts tags ,search and etc (Right Side) -->
+        <div class="col-lg-4">
+          <div class="row">
+            <div
+              class="col-lg-12 d-flex mb-5"
+              style="
+                background-color: #fbf9ff;
+                height: 128px;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="input-group p-5">
+                <input
+                  type="text"
+                  name="keywords"
+                  id="keywords"
+                  class="form-control"
+                  placeholder="Search keyword"
+                  style="height: 57px; width: 70%"
+                  aria-describedby="textSearch"
+                />
+                <span
+                  class="input-group-text bg-danger text-light"
+                  id="textSearch"
+                  style="cursor: pointer"
+                  >Search</span
+                >
+              </div>
+            </div>
+            <div
+              class="col-lg-12 d-flex mb-5"
+              style="
+                background-color: #fbf9ff;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <ul style="list-style-type: none">
+                <li><h1 class="mt-4">Categories</h1></li>
+                <hr />
+                <li>
+                  <a class="categories" href="">Children need Support (20)</a>
+                </li>
+                <hr />
+                <li>
+                  <a class="categories" href="">Drinking Water and food (50)</a>
+                </li>
+                <hr />
+                <li>
+                  <a class="categories" href="">Senior Citizons (12)</a>
+                </li>
+                <hr />
+                <li>
+                  <a class="categories" href="">Ecosystem (30)</a>
+                </li>
+                <hr />
+                <li>
+                  <a class="categories" href="">Gaza Children (20)</a>
+                </li>
+                <hr />
+              </ul>
+            </div>
+            <div
+              class="col-lg-12 d-flex mb-5"
+              style="
+                background-color: #fbf9ff;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="row">
+                <div class="col-12 mt-3">
+                  <h2>Recent Posts</h2>
+                  <hr />
+                </div>
+                <div class="col-5 mt-3">
+                  <img
+                    src="./images/4.jpg"
+                    alt=""
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-7 mt-3 textinSide">
+                  <h3>Children in Africa</h3>
+                  <p>Jaunary 23 2023</p>
+                </div>
+                <div class="col-5 mt-3">
+                  <img
+                    src="./images/2.jpg"
+                    alt=""
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-7 mt-3 textinSide">
+                  <h3>Child Labouring</h3>
+                  <p>September 13 2024</p>
+                </div>
+                <div class="col-5 mt-3">
+                  <img
+                    src="./images/malnutririon.jpeg"
+                    alt=""
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-7 mt-3 textinSide">
+                  <h3>Food and Water</h3>
+                  <p>july 25 2022</p>
+                </div>
+                <div class="col-5 mt-3">
+                  <img
+                    src="./images/blog2.jpg"
+                    alt=""
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-7 mt-3 textinSide">
+                  <h3>Children in Gaza</h3>
+                  <p>june 13 2023</p>
+                </div>
+                <div class="col-5 mt-3 mb-4">
+                  <img
+                    src="./images/edu.jpg"
+                    alt=""
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-7 mt-3 textinSide mb-4">
+                  <h3>Eduaction</h3>
+                  <p>November 11 2021</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-12 d-flex mb-5"
+              style="
+                background-color: #fbf9ff;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="mt-4">Tags</h1>
+                  <hr />
+                </div>
+                <div class="col-3 mt-3 mb-4">
+                  <a href="" class="TagsBtn">Floods</a>
+                </div>
+                <div class="col-5 mt-3 mb-4">
+                  <a href="" class="TagsBtn">Food and Water</a>
+                </div>
+                <div class="col-3 mt-3 mb-4">
+                  <a href="" class="TagsBtn">clothing</a>
+                </div>
+                <div class="col-3 mt-3 mb-4">
+                  <a href="" class="TagsBtn">Shelter</a>
+                </div>
+                <div class="col-3 mt-3 mb-4">
+                  <a href="" class="TagsBtn">EcoSystem</a>
+                </div>
+                <div class="col-5 mt-3 mb-4">
+                  <a href="" class="TagsBtn">Senior Citizons</a>
+                </div>
+                <div class="col-5 mt-3 mb-4">
+                  <a href="" class="TagsBtn">Animal Walfare</a>
+                </div>
+                <div class="col-4 mt-3 mb-4">
+                  <a href="" class="TagsBtn">Hospitals</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-12 d-flex mb-5"
+              style="
+                background-color: #fbf9ff;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="mt-4">Instagram Feed</h1>
+                  <hr />
+                </div>
+                <div class="col-4 mt-3 mb-4">
+                  <img
+                    src="./images/2.jpg"
+                    alt=" "
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-4 mt-3 mb-4">
+                  <img
+                    src="./images/animal.jpg"
+                    alt=" "
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-4 mt-3 mb-4">
+                  <img
+                    src="./images/4.jpg"
+                    alt=" "
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-4 mt-3 mb-4">
+                  <img
+                    src="./images/blog2.jpg"
+                    alt=" "
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-4 mt-3 mb-4">
+                  <img
+                    src="./images/ecosystem1.jpg"
+                    alt=" "
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-4 mt-3 mb-4">
+                  <img
+                    src="./images/blog1.jpg"
+                    alt=" "
+                    class="img-fluid"
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fixed blog when clicked -->
+    <div class="container-fluid fixedBlog">
+      <div>
+        <i style="float: inline-end"
+          ><span
+            class="material-symbols-outlined closebtn"
+            style="font-size: 66px; z-index: 2001"
+          >
+            close
+          </span></i
+        >
+      </div>
+      <div class="container-fluid d-flex" style="justify-content: center">
+        <div class="card fixedCard mb-5">
+          <img src="./images/blog2.jpg" alt="" class="img-fluid" width="100%" />
+          <div class="card-body">
+            <div class="card-title"><h1>Children In Gaza</h1></div>
+            <p>
+              Children in Gaza face unique challenges due to the ongoing
+              political and humanitarian situation in the region. Living in one
+              of the most densely populated areas in the world, Gaza's children
+              endure a reality shaped by conflict, economic hardship, and
+              limited access to basic necessities. <br />
+              One of the most significant impacts on children in Gaza is the
+              cycle of violence and conflict that has persisted for decades.
+              Many children grow up witnessing or directly experiencing the
+              horrors of war, including bombings, gunfire, and loss of loved
+              ones. These traumatic experiences can have long-lasting
+              psychological effects, leading to anxiety, depression, and
+              post-traumatic stress disorder (PTSD). The constant fear and
+              instability make it difficult for children to feel safe and
+              secure, hindering their emotional well-being and development.
+              Access to education is another major concern for children in Gaza.
+              The education system suffers from overcrowded classrooms,
+              inadequate facilities, and a shortage of qualified teachers.
+              Frequent disruptions caused by conflict further impede learning
+              opportunities, with schools often forced to close or relocate due
+              to safety concerns. <br />
+              <span style="color: tomato">
+                As a result, many children struggle to receive a quality
+                education, limiting their future prospects and perpetuating the
+                cycle of poverty.</span
+              >
+
+              Children bear the brunt of these hardships, facing malnutrition,
+              illness, and limited access to essential healthcare services. The
+              lack of proper nutrition and healthcare undermines their physical
+              development and overall health, putting them at risk of lifelong
+              health issues. Despite these challenges, children in Gaza
+              demonstrate remarkable resilience and strength in the face of
+              adversity. <br />
+              <span style="color: tomato">
+                Many find solace and support within their families and
+                communities, relying on each other to cope with the hardships
+                they endure.</span
+              >
+              Organizations and NGOs also play a crucial role in providing aid
+              and assistance to vulnerable children, offering psychosocial
+              support, educational programs, and access to basic necessities.
+              Efforts to improve the situation for children in Gaza must
+              prioritize their safety, well-being, and right to a dignified
+              childhood. This requires a concerted effort from the international
+              community to address the root causes of the conflict, alleviate
+              humanitarian suffering, and promote peace and stability in the
+              region. By investing in education, healthcare, and social support
+              systems, we can help empower the children of Gaza to build a
+              brighter future for themselves and their community. <br />
+              <b>
+                The economic blockade imposed on Gaza exacerbates the
+                humanitarian crisis, with severe shortages of food, clean water,
+                and medical supplies.</b
+              >
+              Certainly, let's delve deeper into some specific aspects of the
+              challenges faced by children in Gaza. <br />
+              <br />
+              1. <b style="color: green">**Trauma and Mental Health**:</b>
+              The psychological impact of living in a conflict zone cannot be
+              overstated. Children in Gaza often experience symptoms of trauma
+              such as nightmares, bed-wetting, and behavioral issues. The lack
+              of access to mental health services exacerbates these problems,
+              leaving many children without the support they need to cope with
+              their emotions. Addressing the mental health needs of children in
+              Gaza is crucial for their overall well-being and future
+              resilience.
+              <br /><br />2.<b style="color: green"
+                >**Childhood Interrupted**:</b
+              >
+              Childhood in Gaza is marked by experiences that no child should
+              have to endure. Many children are forced to grow up quickly,
+              assuming responsibilities beyond their years due to the loss of
+              parents or older siblings, or the need to contribute to the
+              family's income. This premature transition to adulthood robs
+              children of their innocence and deprives them of essential
+              experiences of play, learning, and socialization. <br /><br />
+              3.<b style="color: green"> **Limited Opportunities**:</b> The
+              blockade and restricted movement severely limit opportunities for
+              children in Gaza. Higher education, job prospects, and exposure to
+              different cultures are often out of reach for many due to the
+              economic and political constraints. This lack of opportunities
+              perpetuates a sense of hopelessness and disillusionment among
+              Gaza's youth, fueling feelings of frustration and resentment.
+              <br /><br />
+              4.<b style="color: green">**Healthcare Challenges**:</b> Access to
+              healthcare in Gaza is constrained by limited resources and
+              infrastructure, exacerbated by the blockade. Children with chronic
+              illnesses or disabilities face significant barriers to receiving
+              adequate care and support. The shortage of medical supplies and
+              specialized treatment facilities further compounds the challenges
+              faced by children with complex health needs. <br /><br />
+              5.
+              <b style="color: green">**Impact of Displacement**:</b> Gaza's
+              children are no strangers to displacement, with many experiencing
+              multiple episodes of forced evacuation due to conflict or the
+              threat of demolition. Displacement disrupts their education,
+              social networks, and sense of stability, leaving them vulnerable
+              to exploitation and abuse. The lack of durable solutions for
+              displaced families perpetuates a cycle of instability and
+              uncertainty for children in Gaza. Despite these challenges, there
+              is hope for the children of Gaza. Investing in education,
+              healthcare, and psychosocial support services can make a tangible
+              difference in their lives, helping them heal from trauma, pursue
+              their dreams, and contribute positively to their communities. By
+              prioritizing the needs of Gaza's children and investing in their
+              future, we can help break the cycle of conflict and build a more
+              peaceful and prosperous society for generations to come.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link text-danger" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-danger" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-danger" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-danger" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-danger" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid" style="background-color: #fcf8f9">
+        <div class="container footerContainer">
+          <div class="row">
+            <div class="col-lg-4 mb-5 p-5">
+              <h1 class="text-center">
+                <a
+                  href="./Home.html"
+                  style="color: black; text-decoration: none; cursor: pointer"
+                  >Helping<span class="text-success">Hands</span></a
+                >
+              </h1>
+              <br />
+              <p style="font-size: 23px">
+                At HelpingHands, we are driven by a profound commitment to
+                making a meaningful difference in the lives of those we serve.
+                Our mission is clear: to Help other who are in need. Guided by
+                our core values of compassion, integrity, and inclusivity, we
+                have been steadfastly dedicated to this cause since our
+                inception 2019.
+              </p>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="col-3">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="col-3"><i class="fa-brands fa-linkedin"></i></div>
+                  <div class="col-3"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 p-5" style="font-size: 23px">
+              <h1 class="text-center">Services</h1>
+              <ul>
+                <li class="list-group-item">
+                  <a class="services" style="text-decoration: none" href=""
+                    >Food and Water</a
+                  >
+                  <hr />
+                </li>
+                <li class="list-group-item">
+                  <a class="services" style="text-decoration: none" href=""
+                    >Eduaction</a
+                  >
+                </li>
+                <hr />
+                <li class="list-group-item">
+                  <a class="services" style="text-decoration: none" href=""
+                    >Health and Medicine</a
+                  >
+                </li>
+                <hr />
+                <li class="list-group-item">
+                  <a class="services" style="text-decoration: none" href=""
+                    >Shelter</a
+                  >
+                </li>
+                <hr />
+              </ul>
+            </div>
+            <div class="col-lg-4 text-center p-5">
+              <h1>Subscribe Newsletter</h1>
+              <br />
+              <h4>
+                Subscribe our newsletter to get updates about our services and
+                offers.
+              </h4>
+              <br />
+              <div class="container">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your Email"
+                  class="form-control rounded-pill text-center"
+                  style="height: 74px; font-size: 30px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/blog.js"></script>
+  </body>
+</html>

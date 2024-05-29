@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
+/* navbar Section */
+nav {
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.charityName {
+  font-size: 40px;
+  font-family: monospace;
+}
+.donateBtn {
+  font-size: 22px;
+  background-color: #dc3545;
+}
+
+.btndiva {
+  display: flex;
+  justify-content: center;
+}
+.navbarTabs {
+  display: flex;
+  align-items: center;
+}
+.navbarTabs a {
+  font-size: 25px;
+  color: black;
+}
+.navbarTabs a:hover {
+  color: #dc3545;
+}
+.donateBtn:hover {
+  background-color: #198754;
+}
+.sectionCarousel {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.textOnImage {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  font-family: cursive;
+}
+.causeBtn:hover {
+  background-color: #198754;
+}
+
+.navbarTabs .active {
+  color: #198754;
+}
+
+/* Carousel and Card Section */
+.carousel-caption {
+  filter: drop-shadow(2px 4px 6px black);
+  display: none;
+}
+.caruselContainer {
+  max-width: 1831px;
+}
+.cardsDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.cardHover:hover {
+  transform: scale(1.04);
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.card {
+  width: 500px;
+  max-width: 100%;
+}
+.prevIconCards {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+}
+.get:hover {
+  background-color: #40ac7a;
+}
+.strip {
+  background-image: url("../images/back.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.ServicesText:hover {
+  color: #198754;
+  cursor: pointer;
+}
+.servicesweProvide {
+  max-width: 1740px;
+}
+
+.needHelpDiv {
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/need\ help.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+  display: flex !important;
+  align-items: flex-end;
+}
+.smallContainer {
+  background-color: white;
+}
+.helpText:hover {
+  color: #dc3545;
+}
+
+.fa-brands {
+  font-size: xxx-large;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  color: #dc3545;
+}
+.fa-facebook-f:hover {
+  color: #355fdc;
+}
+.fa-linkedin:hover {
+  color: #144cf4;
+}
+.fa-youtube:hover {
+  color: #fb1a31;
+}
+.services:hover {
+  color: #198754;
+}
+.services {
+  color: #000000;
+}
+.list-group {
+  background-color: #fcf8f9;
+}
+
+.headerImage {
+  background-image: url("../images/ecosystem.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerImageabout {
+  background-image: url("../images/aboutr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.headerImageContact {
+  background-image: url("../images/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+}
+#map {
+  height: 50vh;
+  width: 100%;
+}
+.mapping {
+  display: flex;
+  justify-content: center;
+}
+.sendbtn {
+  color: #dc3545;
+}
+.sendbtn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+.addressList:hover {
+  cursor: pointer;
+  color: #dc3545;
+}
+.headerImageblog {
+  background-image: url("../images/blog\ Heasder.jpg");
+  background-size: cover;
+  display: flex !important;
+  background-repeat: no-repeat;
+  justify-content: start;
+  align-items: center;
+}
+.card:hover .card-title {
+  color: #dc3545;
+}
+.cardbtns:hover {
+  background-color: white;
+  color: #dc3545;
+}
+.categories:hover {
+  color: #dc3545;
+}
+.categories {
+  color: rgba(0, 0, 0, 0.627);
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 20px;
+}
+.textinSide:hover {
+  color: #dc3545;
+  cursor: pointer;
+}
+.TagsBtn {
+  text-decoration: none;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 10px;
+}
+.TagsBtn:hover {
+  color: #ffffff;
+  background-color: #dc3545;
+}
+@media (min-width: 1400px) {
+  .smallContainer {
+    max-width: 744px;
+  }
+  .joinWithDiv {
+    max-width: 1700px;
+  }
+  .footerContainer {
+    max-width: 1850px;
+  }
+  .mapping {
+    max-width: 1600px;
+  }
+  .getInTouch {
+    max-width: 1600px;
+  }
+  .blogsContainer {
+    max-width: 1700px;
+  }
+}
+.pagination {
+  justify-content: center;
+}
+.pagination .page-link {
+  font-size: 30px;
+}
+.fixedCard {
+  width: 62%;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.closebtn {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+}
+.fixedBlog {
+  position: fixed;
+  display: none;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  margin-top: 73px;
+  background-color: #0000008c;
+}
